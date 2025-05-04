@@ -25,7 +25,7 @@ if not os.path.exists(res_vacancies_file):
     published_at response_url vacancy_url company 
                          company_url schedule professional_roles experience is_grequest comments""".split()
     vacancies_df = pd.DataFrame(columns=column_name)
-    vacancies_df.to_exce(res_vacancies_file, index=False)
+    vacancies_df.to_excel(res_vacancies_file, index=False)
 
 
 # Считываем файл с минус-фразами из назаний вакансий (отсекаем ненужные вакансии по этим фразам)
